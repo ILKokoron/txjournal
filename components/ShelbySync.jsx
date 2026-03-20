@@ -91,7 +91,7 @@ export default function ShelbySync({ trades, onRestore, connected, account, sync
           <span>trades → shelby blob (immutable)</span>
           <span>index.json → always updated</span>
           <span>linked to your petra wallet</span>
-          <a href="https://explorer.shelby.xyz/testnet" target="_blank" rel="noopener noreferrer">
+          <a href="https://explorer.shelby.xyz/shelbynet" target="_blank" rel="noopener noreferrer">
             explorer.shelby.xyz ↗
           </a>
         </div>
