@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import { useWallet } from '../lib/useWallet';
+import { useWallet } from '@aptos-labs/wallet-adapter-react';
 import { useShelby } from '../lib/useShelby';
 import { calcStats, generateId } from '../lib/tradeUtils';
 import TradeForm from '../components/TradeForm';
@@ -29,7 +29,16 @@ export default function Home() {
   const [view, setView]           = useState('dashboard'); // dashboard | trades | watchlist
   const [chartReady, setChartReady] = useState(false);
 
-  const wallet  = useWallet();
+  const { account, connected, isLoading: connecting, connect, disconnect, wallet: walletInfo } = useWallet();
+const wallet = {
+  account,
+  connected,
+  connecting,
+  connect: () => connect('Petra'),
+  disconnect,
+  shortAddress: account?.address ? `${account.address.toString().slice(0,6)}...${account.address.toString().slice(-4)}` : null,
+  error: null,
+};
   const shelby  = useShelby();
 
   // register Chart.js on client
