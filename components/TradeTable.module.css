@@ -1,0 +1,29 @@
+.wrap { overflow-x: auto; border: 1px solid var(--border); clip-path: var(--chamfer-md); }
+
+.table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.table thead tr { background: var(--muted); border-bottom: 1px solid var(--border); }
+.table th { text-align: left; padding: 8px 12px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--dim); font-weight: 400; white-space: nowrap; }
+
+.row { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+.row:last-child { border-bottom: none; }
+.row:hover { background: rgba(0,255,136,0.03); }
+.table td { padding: 9px 12px; vertical-align: middle; white-space: nowrap; }
+
+.pair { font-weight: 700; font-size: 12px; letter-spacing: 0.05em; color: var(--fg); }
+.dim { color: var(--dim); }
+.pos { color: var(--green); font-weight: 700; text-shadow: 0 0 6px rgba(0,255,136,0.4); }
+.neg { color: var(--red);   font-weight: 700; }
+
+.badge { display: inline-block; padding: 2px 7px; font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; clip-path: polygon(0 3px,3px 0,100% 0,100% calc(100% - 3px),calc(100% - 3px) 100%,0 100%); }
+.long   { background: rgba(0,255,136,0.12); color: var(--green); }
+.short  { background: rgba(255,51,102,0.12); color: var(--red); }
+.open   { background: rgba(255,209,102,0.12); color: var(--yellow); }
+.closed { background: rgba(0,212,255,0.12); color: var(--cyan); }
+
+.acts { display: flex; gap: 3px; }
+.editBtn, .delBtn { width: 24px; height: 24px; background: transparent; border: 1px solid var(--border); color: var(--dim); font-size: 11px; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+.editBtn:hover { border-color: var(--green); color: var(--green); box-shadow: var(--glow-g); }
+.delBtn:hover  { border-color: var(--red);   color: var(--red); }
+
+.empty { padding: 48px 24px; text-align: center; color: var(--dim); font-size: 11px; display: flex; flex-direction: column; align-items: center; gap: 12px; border: 1px solid var(--border); clip-path: var(--chamfer-md); }
+.emptyIcon { font-size: 2rem; color: var(--border); }
