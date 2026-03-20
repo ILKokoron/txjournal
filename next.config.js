@@ -7,6 +7,11 @@ const nextConfig = {
       asyncWebAssembly: true,
       layers: true,
     };
+    // Handle WASM for browser SDK
+    config.module.rules.push({
+      test: /\.wasm$/,
+      type: 'webassembly/async',
+    });
     return config;
   },
 };
