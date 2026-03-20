@@ -17,6 +17,8 @@
     "@shelby-protocol/sdk": "0.2.3",
     "@shelby-protocol/react": "^1.0.3",
     "@aptos-labs/ts-sdk": "^5.0.0",
+    "@aptos-labs/wallet-adapter-react": "^7.1.0",
+    "@tanstack/react-query": "^5.51.23",
     "got": "^12.6.1"
   },
   "devDependencies": {
