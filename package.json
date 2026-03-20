@@ -14,7 +14,7 @@
     "chart.js": "^4.4.1",
     "react-chartjs-2": "^5.2.0",
     "@wallet-standard/app": "^1.1.0",
-    "@shelby-protocol/sdk": "^0.2.4",
+    "@shelby-protocol/sdk": "0.2.3",
     "@shelby-protocol/react": "^1.0.3",
     "@aptos-labs/ts-sdk": "^5.0.0"
   },
